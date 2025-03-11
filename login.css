@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Poppins:900i');
+
+
+@font-face {
+    font-family: 'hHachimaki'; /* Name your font family */
+    src: url('font/hHachimaki.ttf'); /* Locate the .ttf file within your directory*/
+}
+
+body {
+    background-image: url(img/casino.png);
+}
+
+#title{
+    font-family: 'hHachimaki', Arial, sans-serif;
+    font-size: 35px;
+    text-align: center;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box {
+    background-color: #D3D3D3; /* Couleur grise de la boîte */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.signup-box {
+    background-color: #D3D3D3; /* Couleur grise de la boîte */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    text-align: center;
+}
+
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #000; /* Fond noir pour la première case */
+    color: #fff; /* Texte en blanc */
+}
+
+.input-group input[readonly] {
+    cursor: default;
+}
+
+.input-group input:focus {
+    outline: none;
+}
+
+
+.logo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.marquee {
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    background: rgb(255, 255, 68);
+    padding: 20px;
+    color: black;
+    width: 100%;
+    font-weight: bold;
+    height: 20px;
+    margin-bottom: 20px;
+
+}
+
+.marquee p {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: scroll-left 30s linear infinite;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
